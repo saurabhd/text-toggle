@@ -7,9 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  <text-toggle [(selected)]="segment" left="Left" right="Right"></text-toggle>
+  <text-toggle [(selected)]="segment" left="Today" right="Week"></text-toggle>
   <div [ngSwitch]="segment">
-    <p *ngSwitchCase="'Left'">Left Content</p>
-    <p *ngSwitchCase="'Right'">Right Content</p>
+    <p *ngSwitchCase="'Today'">Today Content</p>
+    <p *ngSwitchCase="'Week'">Week Content</p>
   </div>
 </ion-content>
