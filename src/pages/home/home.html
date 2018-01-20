@@ -7,8 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <text-toggle [(selected)]="segment" left="Left" right="Right"></text-toggle>
+  <div [ngSwitch]="segment">
+    <p *ngSwitchCase="'Left'">Left Content</p>
+    <p *ngSwitchCase="'Right'">Right Content</p>
+  </div>
 </ion-content>
