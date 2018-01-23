@@ -1,5 +1,23 @@
 text-toggle {
+  span {
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 25px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    color: #c9cedc;
+    &.week {
+      margin-left: -15px;
+    }
+  }
     .selected {
-        font-weight: bold;
+        background: #5BBCB9;
+        color: #fff;
+    }
+    .toggel-box{
+      display: inline-block;
+      padding: 0;
+      background-color: #f5f6f9;
+      border-radius: 20px;
     }
 }

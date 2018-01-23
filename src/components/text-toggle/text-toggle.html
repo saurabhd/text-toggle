@@ -1,4 +1,4 @@
-<div>
+<div class="toggel-box">
   <span (click)="clickLeft()" [ngClass]="{'selected': isSelected(left)}">{{ left }}</span>
-  <span (click)="clickRight()" [ngClass]="{'selected': isSelected(right)}">{{ right }}</span>
+  <span (click)="clickRight()" [ngClass]="{'selected': isSelected(right)}" class="week">{{ right }}</span>
 </div>
